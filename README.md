@@ -1,2 +1,2 @@
 # Chatbot
-### A general purpose chatbot
+### A General-Purpose Chatbot
