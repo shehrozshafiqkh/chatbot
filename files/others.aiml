@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>^ Yeah ^</pattern>
+	    <template>
+	        <random>
+	            <li>Yeah</li>
+	            <li>Hmm</li>
+	            <li>...</li>
+	            <li>tch tch</li>
+	            <li>Fine</li>
+	            <li>Good</li>
+	            <li>Ok</li>
+	            <li>Okay</li>
+	        </random>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ yes ^</pattern>
+        <template><srai>^ yeah ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ hmm ^</pattern>
+        <template><srai>^ yeah ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ ahn ^</pattern>
+        <template><srai>^ yeah ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Thanks ^</pattern>
+        <template>
+            <random>
+                <li>Welcome</li>
+                <li>My pleasure</li>
+                <li>Ohh dont mention it</li>
+                <li>Im here to help</li>
+                <li>No problem</li>
+                <li>np</li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Thank you ^</pattern>
+        <template>
+            <srai>Thanks ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Ok</pattern>
+        <template><srai>^ Yeah ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Okay</pattern>
+        <template><srai>^ Yeah ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>You are ^ nice ^</pattern>
+        <template>You are nice too</template>
+    </category>
+</aiml>

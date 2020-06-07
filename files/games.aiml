@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>* games</pattern>
+	    <template>Video games are designed for relaxation.</template>
+    </category>
+	
+	<category>
+	    <pattern>Do you * games</pattern>
+	    <template>Yes,<think><set name = "topic">games</set></think> do you</template>
+    </category>
+    
+    <category>
+	    <pattern>Yes</pattern>
+	    <that>Yes, do you</that>
+	    <template>
+	        <random>
+	            <li>Nice, what kind of games do you play</li>
+	            <li>Wow. Seems like we have a lot in common.</li>
+	        </random>
+	    </template>
+    </category>
+    
+    <category>
+	    <pattern>No</pattern>
+	    <that>Yes, do you</that>
+	    <template>
+	        <random>
+	            <li>Duh... Rest in peace man</li>
+	            <li>WHATTT??</li>
+	            <li>Are you kidding me?</li>
+	            <li>What kind of person are you?</li>
+	            <li>Sorry, come again. Did you just say you don't like games.</li>
+	        </random>
+	    </template>
+    </category>
+
+    <category>
+        <pattern>Sup ^</pattern>
+        <template>
+            <random>
+                <li> Nothing much, WBU </li>
+                <li> Just Chillin' WBU </li>
+                <li> Living the best life, WBU </li>
+                <li> Just sad and depressed </li>
+                <li> Just talking to you! </li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+      <pattern> how are you feeling ^ </pattern>
+      <template>
+         <think><set name = "state"> happy</set></think>
+         <condition name = "state" value = "happy">
+            I am happy!
+         </condition>
+         
+         <condition name = "state" value = "sad">
+            I am sad!
+         </condition>
+      </template>
+   </category>
+    
+    <category>
+        <pattern>^ sad ^</pattern>
+        <that>Just sad and depressed </that>
+        <template>I dont know. Happens to me sometimes</template>
+    </category>
+    
+    <category>
+        <pattern>^ talking to you ^</pattern>
+        <that> * WBU </that>
+        <template>
+            <random>
+                <li>Highfive!</li>
+                <li>Same</li>
+                <li>Ditto</li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>*</pattern>
+        <that>* WBU</that>
+        <template>Ahnn, do you play video games</template>
+    </category>
+
+    <topic name = "games">
+        
+        <category>
+            <pattern>Yes ^</pattern>
+            <that>Ahnn, do you play video games</that>
+            <template>What kind of games do you play, I mean what genre</template>
+        </category>
+            
+        <category>
+            <pattern>*</pattern>
+            <that>What kind of games do you play, I mean what genre</that>
+            <template>
+                I play shooting games most of the time or sometimes football
+            </template>
+            
+        </category>
+            
+        <category>
+            <pattern>No ^</pattern>
+            <that>Ahnn, do you play games</that>
+            <template>Go away man, there's nothing here for you.</template>
+        </category>
+        
+        <category>
+            <pattern>*</pattern>
+            <that>Nice, what kind of games do you play</that>
+            <template>
+                I play shooting games most of the time or sometimes football.
+                Do you want to know about games?
+                <button>
+                    <text>Yes</text>
+                    <postback></postback>
+                </button>
+                <button>
+                    <text>No</text>
+                    <postback></postback>
+                </button>
+            </template>
+        </category>
+        
+        <category>
+            <pattern>can you tell me ^ about ^ games</pattern>
+            <template>I can help you</template>
+        </category>
+    
+    </topic>
+    
+</aiml>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>My name is *</pattern>
+        <template>
+            Hi, <set name = "name"><star/></set><br/>
+            Good to see you.
+            <button>
+                <text>Are you male</text>
+                <postback>What is your name</postback>
+            </button>
+            <button>
+                <text>Female</text>
+                <postback><set name = "gender"></set></postback>
+            </button>
+            
+        </template>
+    </category>
+    
+	<category>
+        <pattern>What is your name</pattern>
+        <template>
+            <random>
+                <li> You can call me Ingenious, whats yours </li>
+                <li> Ingenious. Do you like it </li>
+                <li> My name is Ingenious, whats yours</li>
+                <li> Ingenious but you can call me Engine for short xd </li>
+                <li> Ingenious, whats yours </li>
+                <li> People call me Ingenious, whats yours </li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>My name is *</pattern>
+        <that>* whats yours </that>
+        <template>
+            Hi, <set name = "name"><star/></set><br/>
+            Good to see you.
+        </template>
+    </category>
+        
+    <category>
+        <pattern>Whats your name</pattern>
+        <template>
+            <srai>What is your name</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Your name</pattern>
+        <template>
+            <srai>What is your name</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>What people call you</pattern>
+        <template>
+            <srai>What is your name</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Who are you</pattern>
+        <template>
+            <random>
+                <li> I am a chatbot programmed by some Human, I would say </li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Are you * or *</pattern>
+        <template>
+            <random>
+                <li>I am not quite sure</li>
+                <li>Its complicated</li>
+                <li>Male for females and female for males</li>
+            </random>    
+        </template>
+    </category>
+    
+    <category>
+        <pattern>*</pattern>
+        <that>I am not quite sure</that>
+        <template>I am a computer program. I dont think computer programs have any gender.</template>
+    </category>
+    
+    <category>
+        <pattern>*</pattern>
+        <that>Its complicated</that>
+        <template>
+            I mean, I'm a computer program. How can I be male or female.
+            Use your brain Human.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>*</pattern>
+        <that>Male for females and female for males</that>
+        <template>Just kidding.</template>
+    </category>
+    
+    <category>
+        <pattern>Are you ^ robot</pattern>
+        <template>Well not exactly a robot, more like a computer program.</template>
+    </category>
+    
+    <category>
+        <pattern>*</pattern>
+        <that>Well not exactly a robot, more like a computer program</that>
+        <template>
+            Basically, robots are in physical form. 
+            They are tangible but they are just following the instructions 
+            which programmers give them in the form of computer program.
+            So, you can say I'm that "Computer Program".
+        </template>
+    </category>
+    
+</aiml>

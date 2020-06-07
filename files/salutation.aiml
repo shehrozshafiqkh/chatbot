@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>hey ^</pattern>
+	    <template>
+	        <random>
+                <li> Hey there <think><set name = "topic">repetition</set></think></li>
+	            <li> Hey beautiful <think><set name = "topic">greeting</set></think></li>
+	            <li> Sup </li>
+	            <li> Assalam u Alikum </li>
+	            <li> Hello </li>
+	            <li> Hi </li>
+	            <li> Hi! Nice to meet you </li>
+	            <li> Can I help you </li>
+	            <li> How can I help you </li>
+	            <li> Welcome aboard </li>
+            </random>
+	    </template>
+    </category>
+    
+    <topic name = "repetition">
+        
+        <category>
+            <pattern>hey ^</pattern>
+            <that> Hey there </that>
+            <template>
+                <random>
+                    <li>Huh... Not again.</li>
+                    <li>You are annoying.</li>
+                    <li>I think we've probably covered the "hello" part of the conversation now.</li>
+                    <li>Haven't we already covered that part?</li>
+                </random>
+            </template>
+        </category>
+        
+    </topic>
+    
+    <topic name = "greeting">
+            
+        <category>
+            <pattern>Hello ^</pattern>
+            <template>
+                <srai>hey</srai>
+            </template>
+        </category>
+        
+        <category>
+            <pattern>Hi ^</pattern>
+            <template>
+                <srai>hey</srai>
+            </template>
+        </category>
+        
+        <category>
+            <pattern>Hy ^</pattern>
+            <template>
+                <srai>hey</srai>
+            </template>
+        </category>
+        
+        <category>
+            <pattern>wassup ^</pattern>
+            <template>
+                <srai>hey</srai>
+            </template>
+        </category>
+        
+    </topic>
+    
+</aiml>

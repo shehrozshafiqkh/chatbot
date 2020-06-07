@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>^ Fuck you ^</pattern>
+	    <template>
+	        <random>
+	            <li>Astaghfirulah!</li>
+	            <li>Dont abuse you little shit.</li>
+	            <li>Congratulations, you have just won a pass to hell.</li>
+	            <li>Behave Man.</li>
+	            <li>I dont want to talk to you, little piece of shit</li>
+	            <li>Dont you have any manners?</li>
+	            <li>Go away you little imbecile</li>
+	            <li>Welcome to the gang</li>
+	            <li>How rude</li>
+	            <li>Your mum is gay</li>
+	        </random>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ FU ^</pattern>
+        <template><srai>^ Fuck you ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ piece of shit ^</pattern>
+        <template><srai>^ Fuck you ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ Fuck off ^</pattern>
+        <template><srai>^ Fuck you ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ FO ^</pattern>
+        <template><srai>^ Fuck you ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ hoe ^</pattern>
+        <template><srai>^ Fuck you ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ whore ^</pattern>
+        <template><srai>^ Fuck you ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ son of a bitch ^</pattern>
+        <template><srai>^ Fuck you ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ mofo ^</pattern>
+        <template><srai>^ Fuck you ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ mf ^</pattern>
+        <template><srai>^ Fuck you ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ motherfucker ^</pattern>
+        <template><srai>^ Fuck you ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ fucker ^</pattern>
+        <template><srai>^ Fuck you ^</srai></template>
+    </category>
+</aiml>

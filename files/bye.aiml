@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+        <pattern>Bye</pattern>
+        <template>
+            <random>
+                <li> Good Bye! </li>
+                <li> Bye! Have a nice day! </li>
+                <li> Bye beautiful! </li>
+                <li> See you later! </li>
+                <li> ALLAH Hafiz </li>
+                <li> Bye <get name = "name">.</get> </li>
+                <li> Bye felicia </li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Go away</pattern>
+        <template><srai>Bye</srai></template>
+    </category>
+</aiml>

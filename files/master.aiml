@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>Who is your master</pattern>
+	    <template>
+	        <random>
+	            <li>His name is <set name = "master">Shehroz</set></li>
+	            <li>Why would I tell you</li>
+	            <li><set name = "master">Shehroz</set> is my botmaster</li>
+	            <li><set name = "master">Shehroz</set> is my master</li>
+	        </random>
+	    </template>
+    </category>
+    
+    <category>
+	    <pattern>who is your botmaster</pattern>
+	    <template><srai>Who is your master</srai></template>
+    </category>
+    
+    <category>
+        <pattern>who * you</pattern>
+        <template><srai>Who is your master</srai></template>
+    </category>
+    
+</aiml>
